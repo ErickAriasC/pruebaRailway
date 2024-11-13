@@ -51,7 +51,7 @@ public class UserControllers {
       return  userRepository.findAll();
   }
 
-
+  @CrossOrigin(origins = "https://prueba-railway.vercel.app")
   @PostMapping("/register")
   public ResponseEntity<?> registry(@RequestBody UserModels userModels) {
       try {
@@ -93,6 +93,7 @@ public class UserControllers {
     }
   }
 
+    @CrossOrigin(origins = "https://prueba-railway.vercel.app")
   @PostMapping("/login")
   public ResponseEntity<?> login(@RequestBody LoginDTO loginDTO) {
     // Validar que el email y la contraseña no estén vacíos
