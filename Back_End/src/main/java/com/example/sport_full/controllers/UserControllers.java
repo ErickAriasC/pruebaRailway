@@ -22,9 +22,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
-@CrossOrigin(origins = "https://prueba-railway.vercel.app")
+
 @RestController
 @RequestMapping("/auth")
+@CrossOrigin(origins = "https://prueba-railway.vercel.app")
 public class UserControllers {
 
   private final IUserRepository userRepository;
