@@ -22,7 +22,7 @@ public class EmailServices {
         message.setTo(email);
         message.setSubject("Verificación de Correo");
         message.setText("Para verificar tu correo, por favor haz clic en el siguiente enlace: "
-                + "http://localhost:5173/auth/verify?token=" + verificationToken);
+                + "https://prueba-railway.vercel.app/auth/verify?token=" + verificationToken);
         mailSender.send(message);
     }
 }
