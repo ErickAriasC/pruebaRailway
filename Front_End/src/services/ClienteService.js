@@ -4,14 +4,15 @@ const API_URL = "https://pruebarailway-production-d101.up.railway.app/auth";
 
 class ClienteService {
 
+   
     // Crear un nuevo usuario
     createUser(user) {
-        return axios.post(API_URL + "/register", user);
+        return axios.post(`${API_URL}/register`, user);
     }
 
     // Iniciar sesión
     login(credentials) {
-        return axios.post(API_URL + "/login", credentials);
+        return axios.post(`${API_URL}/login`, credentials);
     }
 
     // Cerrar sesión (opcional, si el backend tiene un endpoint para esto)
